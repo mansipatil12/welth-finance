@@ -2,6 +2,7 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs"
 import { LayoutDashboard, PenBox } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { Button } from "./ui/button"
 
 const Header = () => {
   return (
@@ -20,18 +21,18 @@ const Header = () => {
           <SignedIn>
             <Link href={"/dashboard"}>
             className="text-gray-600 hover:text-blue-600 flex items-center gap-2"
-            <button variant="outline">
+            <Button variant="outline">
               <LayoutDashboard size={18}/>
               <span className="hidden md:inline">Dashboard</span>
-            </button>
+            </Button>
             </Link>
 
             <Link href={"/transaction/create"}>
-            <button className="flex items-center gap-2">
+            <Button className="flex items-center gap-2">
               <PenBox size={18}/>
               <LayoutDashboard size={18}/>
               <span className="hidden md:inline">Dashboard</span>
-            </button>
+            </Button>
             </Link>
 
 
