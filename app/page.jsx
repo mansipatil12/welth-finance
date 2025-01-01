@@ -1,7 +1,8 @@
 import HeroSection from "@/components/hero";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { featuresData, howItWorksData, statsData } from "@/data/landing";
-import { StepBack, StepBackIcon } from "lucide-react";
+import { featuresData, howItWorksData, statsData, testimonialsData } from "@/data/landing";
+import { Link, StepBack, StepBackIcon } from "lucide-react";
 
 export default function Home() {
   return <div className="mt-40">
@@ -11,7 +12,7 @@ export default function Home() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {statsData.map((statsData, index)=>(
           <div key={index} className="text-center">
-            <div className="text-4xl font bold text-blue-600 mb-2">{statsData.value}</div>
+            <div className="text-4xl font bold text-blue-600 font-semibold mb-2">{statsData.value}</div>
             <div className="text-gray-600">{statsData.label}</div>
           </div>
         ))}
@@ -28,7 +29,7 @@ export default function Home() {
             <Card key={index} className="p-6">
               <CardContent className="space-y-4 pt-4">
                 {feature.icon}
-                <h3>{feature.title}</h3>
+                <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
                 <p>{feature.description}</p>
               </CardContent>
             </Card>
@@ -52,6 +53,20 @@ export default function Home() {
       </div>
     </section>
 
-    
+    <section className="py-20 bg-blue-600">
+      <div className="container mx-auto px-4 text-center">
+      <h2 className="text-3xl font-bold text-center mb-4 text-white">
+      Ready to take control of your finances?
+      </h2>
+      <p className="text-blue-200 mb-8 max-w-2xl mx-auto">
+        Join thousands of users who are already managing their finances smarter with Welth.
+      </p>
+      <Link href="/Dashboard">
+      <button size="lg" className="bg-white text-blue-600 hover:bg-blue-500 animate-bounce">
+        Start Free Trial
+      </button>
+      </Link>
+      </div>
+    </section>
   </div>;
 }

@@ -14,7 +14,7 @@ import {
       label: "Active Users",
     },
     {
-      value: "$2B+",
+      value: "200Cr+",
       label: "Transactions Tracked",
     },
     {
