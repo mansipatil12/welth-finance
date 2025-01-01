@@ -23,7 +23,7 @@ const HeroSection = () => {
         };
         window.addEventListener("scroll", handleScroll)
 
-        return ()=>window.removeEventListenerListener("scroll", handleScroll);
+        return ()=>window.removeEventListener("scroll", handleScroll);
     },[])
   return (
     <div className="pb-20 px-4">
