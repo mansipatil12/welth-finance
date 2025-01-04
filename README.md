@@ -12,7 +12,7 @@ Welth is a feature-rich finance management application designed to help users ef
 
 -Analysis & Reporting: Spending analysis charts, monthly reports with AI insights, email spending alerts, AI-powered spending optimization suggestions.
 
-##How It Works
+## How It Works
 
 1. Sign Up/Login: Securely access your account using Clerk.
 
@@ -27,7 +27,7 @@ Welth is a feature-rich finance management application designed to help users ef
 6. Generate Reports: Receive monthly email summaries and AI insights.
 
 
-##Future works
+## Future works
 
 -Integration with stock and investment tracking.
 
@@ -36,7 +36,7 @@ Welth is a feature-rich finance management application designed to help users ef
 -Budgeting and saving goal features.
 
 
-##Contributions
+## Contributions
 
 We welcome contributions! Please fork the repository and submit a pull request for any features or fixes.
 
