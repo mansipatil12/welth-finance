@@ -1,4 +1,4 @@
-# Welth - Finance Management App (Ongoing)
+# Welth - Finance Management App (Discontinued repo)
 
 Welth is a feature-rich finance management application designed to help users efficiently track their income, expenses, and overall financial health. Built using cutting-edge technologies, Welth provides seamless insights and tools for personal finance management, all in one place.
 
